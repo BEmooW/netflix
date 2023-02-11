@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="accueil.html">Home</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Coach</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+
+
+    </header>
+    <h1>inscription</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label>First Name *</label></td>
+                <td><input type="text" name="fisrtname" minlength="3" placeholder="fisrt name" required></td>
+            </tr>
+            <tr>
+                <td><label>Last Name </label></td>
+                <td><input type="text" name="lasttname" minlength="3" placeholder="last name"> </td>
+            </tr>
+            <tr>
+                <td><label>Adresse </label></td>
+                <td><textarea name="sub" cols="10" rows="5" placeholder="write your address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number *</label></td>
+                <td><input type="number" name="tel" placeholder="+216....." required></td>
+            </tr>
+            <tr>
+                <td><label>Dte of birth </label></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><label>Password </label></td>
+                <td><input type="Password" name="pwd" pattern="[0-9a-zA-Z]" minlength="4" maxlength="20"
+                        placeholder="min, maj, chiff et symb " required></td>
+            </tr>
+            <tr>
+                <td><label>Confirm Password * </label></td>
+                <td><input type="cPassword" name="cpwd" pattern="[0-9a-zA-Z]" minlength="4" maxlength="20"
+                        placeholder="confirm your pwd" required></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
