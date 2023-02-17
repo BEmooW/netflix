@@ -129,7 +129,7 @@ const prenom=document.getElementById("prenom");
     } 
     else 
     {
-        error="<p style='color:red;'> Incorrect </p>";
+        error="<p style='color:red;'> Incorrect </p>"; 
     }
 
    document.getElementById("correctdyna").innerHTML= error;
