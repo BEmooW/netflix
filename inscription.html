@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .inputs
+        {
+            margin: 10px;
+            margin-left: 10px;
+        }
+    </style>
+    
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="accueil.html">Home</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Coach</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+
+
+    </header>
+    <h1>inscription</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label>First Name *</label></td>
+                <!-- minlength="3"  required -->
+                <td><input type="text" name="fisrtname" id="prenom" class="inputs" placeholder="fisrt name" onkeyup="nameValidation()" ></td>
+                <td><p id="firstnerror"></p></td>
+                <td><p id="correctdyna"></p></td>
+            </tr>
+            <tr>
+                <td><label>Last Name </label></td>
+                <td><input type="text" name="lasttname" id="nom" class="inputs" placeholder="last name"> </td>
+                <td><p id="lastnerror"></p></td>
+            </tr>
+            <tr>
+                <td><label>Adresse </label></td>
+                <td><textarea name="sub" class="inputs" id="adresse" cols="10" rows="5"  placeholder="write your address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number *</label></td>
+                <td><input type="number" class="inputs" name="tel" id="phone" placeholder="+216....." ></td>
+                <td><p id="phoneerror"></p></td>
+            </tr>
+            <tr>
+                <td><label>Date of birth </label></td>
+                <td><input type="date" class="inputs" name="date"></td>
+            </tr>
+            <tr>
+                <td><label>Password </label></td>
+                <!-- pattern="[0-9a-zA-Z]" minlength="4" maxlength="20" -->
+                <td><input type="Password" class="inputs" id="Password" name="pwd" 
+                        placeholder="min, maj, chiff et symb " ></td>
+                <td><p id="pwderror"></p></td>
+            </tr>
+            <tr>
+                <td><label>Confirm Password * </label></td>
+                <td><input type="Password" class="inputs" id="confirmPassword" name="cpwd" 
+                        placeholder="confirm your pwd" ></td>
+                <td><p id="cpwderror"></p></td>
+
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <button id="btnvalidate" onclick="PassValidation()">submit</button>
+                    <!-- <input type="submit" value="submit" onclick="PassValidation()"> -->
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+            <tr>
+                <td><p id="notnull"></p></td>
+            </tr>
+
+        </table>
+
+    </form>
+    <script src="inscription.js"></script>
+</body>
+
+</html>

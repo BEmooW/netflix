@@ -1,0 +1,25 @@
+p
+{
+    background-color: rgb(47, 1, 51);
+    font-size: x-large;
+    color: rgb(249, 218, 250);
+}
+body
+{
+    text-align: center;
+    /* text-align: justify; */
+    color:rgb(250, 204, 237);
+    background-color: rgb(104, 53, 89);
+    /* font-family: monospace; */
+    font-variant: small-caps;
+    font-size: large;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(245, 240, 240, 0.867);
+
+}
+div
+{
+    background-image: url(./img1.jpg);
+    opacity: 0.3;
+    
+}
